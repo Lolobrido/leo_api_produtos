@@ -1,0 +1,81 @@
+/* Zerando padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Background com um degradê moderno */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Container principal */
+.home-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 60px 80px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Efeito de vidro embaçado */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+/* Estilização do botão */
+.btn-cadastrar {
+    display: inline-block;
+    padding: 18px 45px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #764ba2;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeitos ao passar o mouse */
+.btn-cadastrar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+}
+
+.btn-cadastrar:active {
+    transform: translateY(-2px);
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .home-container {
+        padding: 40px 20px;
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
